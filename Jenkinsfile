@@ -46,7 +46,7 @@ pipeline {
                 body: 'Pipeline job ${JOB_NAME} failed. Build URL: ${BUILD_URL}',
                 recipientProviders: [[$class: 'CulpritsRecipientProvider'], [$class: 'DevelopersRecipientProvider'], [$class: 'FailingTestSuspectsRecipientProvider'], [$class: 'UpstreamComitterRecipientProvider']],
                 subject: 'FAILED: Jenkins Job- ${JOB_NAME} Build No- ${BUILD_NUMBER}',
-                to: 'Swarna.naidu@calsoftinc.com'
+                to: 'Swarna.Naidu@calsoftinc.com'
         }
     }
 }
